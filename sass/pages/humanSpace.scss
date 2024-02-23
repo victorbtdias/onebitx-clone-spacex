@@ -1,0 +1,138 @@
+.container00 {
+  &.container08 {
+    background-image: url(../../images/humanFlight/01.jpg);
+  }
+  &.container09 {
+    background-image: url(../../images/humanFlight/02.jpg);
+  }
+  &.container10 {
+    background-image: url(../../images/humanFlight/03.jpg);
+  }
+  &.container11 {
+    background-image: url(../../images/humanFlight/04.jpg);
+  }
+  &.container12 {
+    background-image: url(../../images/humanFlight/05.jpg);
+  }
+}
+.titleContent2 {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .humanSpaceTitle {
+    font-size: 120px;
+    padding-bottom: 20px;
+  }
+  .humanSpaceSubTitle {
+    font-size: 30px;
+    font-weight: lighter;
+  }
+  .arrowDown2 {
+    display: inline-block;
+    width: 120px;
+    margin-top: 50px;
+  }
+}
+.middleText {
+  background-color: black;
+  min-height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .middleTextStyle {
+    color: $table-item;
+    width: 800px;
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    &:hover {
+      color: blue;
+    }
+  }
+}
+.contentRight {
+  padding-left: 40%;
+  padding-top: 15%;
+  #mission {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  .shortTitle2 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .missionDesc {
+    font-weight: lighter;
+  }
+}
+.contentLeft {
+  margin-left: 5%;
+  padding-top: 15%;
+  #mission {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  .shortTitle2 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .missionDesc {
+    font-weight: lighter;
+  }
+}
+
+//Media query
+
+@media (max-width: 768px) {
+  .titleContent2 {
+    .humanSpaceTitle {
+      font-size: 70px;
+    }
+  }
+  .contentRight {
+    margin-left: 5%;
+  }
+  .contentLeft {
+    margin-left: 5%;
+  }
+  .middleText {
+    .middleTextStyle {
+      width: auto;
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 610px) {
+  .titleContent2 {
+    .humanSpaceTitle {
+      font-size: 50px;
+    }
+    .humanSpaceSubTitle {
+      font-size: 24px;
+    }
+  }
+  .contentRight {
+    padding-left: 5%;
+    .shortTitle2 {
+      font-size: 40px;
+    }
+  }
+  .contentLeft {
+    margin-left: 5%;
+    .shortTitle2 {
+      font-size: 40px;
+    }
+  }
+  .middleText {
+    .middleTextStyle {
+      width: auto;
+      font-size: 13px;
+    }
+  }
+}
